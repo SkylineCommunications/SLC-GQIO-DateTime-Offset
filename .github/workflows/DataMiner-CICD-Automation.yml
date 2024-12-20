@@ -24,6 +24,7 @@ jobs:
       repository: ${{ github.repository }}
       owner: ${{ github.repository_owner }}
       sonarCloudProjectName: SkylineCommunications_SLC-GQIO-DateTime-Offset
+      catalog-identifier: 5629728e-08d2-4714-b5b6-b66831d22ef5
     secrets:
       # The API-key: generated in the DCP Admin app (https://admin.dataminer.services/) as authentication for a certain DataMiner System.
       api-key: ${{ secrets.DATAMINER_DEPLOY_KEY }}
