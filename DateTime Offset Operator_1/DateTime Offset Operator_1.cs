@@ -9,7 +9,7 @@ namespace MediaOps.GQI.DateTime_Offset_Operator_1
 	{
 		private readonly GQIColumnDropdownArgument dateTimeValueColumnArg = new GQIColumnDropdownArgument("DateTime value") { IsRequired = true, Types = new[] { GQIColumnType.DateTime } };
 		private readonly GQIIntArgument dateTimeOffsetValueArg = new GQIIntArgument("DateTime Offset Value") { IsRequired = true };
-		private readonly GQIStringDropdownArgument dateTimeOffsetUnitArg = new GQIStringDropdownArgument("DateTime Offset Unit", new[] { "Minute(s)", "Hour(s)", "Day(s)" }) { IsRequired = true, DefaultValue = "Hour(s)" };
+		private readonly GQIStringDropdownArgument dateTimeOffsetUnitArg = new GQIStringDropdownArgument("DateTime Offset Unit", new[] { "Minute(s)", "Hour(s)", "Day(s)", "Second(s)" }) { IsRequired = true, DefaultValue = "Hour(s)" };
 		private readonly GQIStringArgument dateTimeOutputColumnNameArg = new GQIStringArgument("DateTime result column name") { IsRequired = true };
 
 		private GQIColumn dateTimeValueColumn;
@@ -43,6 +43,10 @@ namespace MediaOps.GQI.DateTime_Offset_Operator_1
 
 			switch (dateTimeOffsetUnit)
 			{
+				case "Second(s)":
+					row.SetValue(outputColumn, value.AddSeconds(dateTimeOffsetValue));
+					break;
+
 				case "Minute(s)":
 					row.SetValue(outputColumn, value.AddMinutes(dateTimeOffsetValue));
 					break;
