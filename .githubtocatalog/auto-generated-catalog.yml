@@ -36,7 +36,7 @@ id: 5629728e-08d2-4714-b5b6-b66831d22ef5
 #   Max length: 100 characters.
 #   Cannot contain newlines.
 #   Cannot contain leading or trailing whitespace characters.
-title: SLC-GQIO-DateTime-Offset
+title: DateTime Offset Operator
 # [Optional]
 # General information about the Catalog item.
 #   Max length: 100,000 characters
