@@ -73,5 +73,5 @@ owners:
 #   Cannot contain leading or trailing whitespace characters.
 tags:
   - 'GQI'
-  - 'GQI Operator'
+  - 'GQIOperator'
   - 'DateTime'
