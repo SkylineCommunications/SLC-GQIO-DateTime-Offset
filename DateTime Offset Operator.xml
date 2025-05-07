@@ -3,7 +3,7 @@
 	<Name>DateTime Offset Operator</Name>
 	<Description></Description>
 	<Type>Automation</Type>
-	<Author>ESU</Author>
+	<Author>Skyline Communications</Author>
 	<CheckSets>FALSE</CheckSets>
 	<Folder></Folder>
 
@@ -21,7 +21,6 @@
 			<Value><![CDATA[[Project:DateTime Offset Operator_1]]]></Value>
 			<Param type="preCompile">true</Param>
 			<Param type="libraryName">DateTime Offset Operator</Param>
-			<Message></Message>
 		</Exe>
 	</Script>
 </DMSScript>

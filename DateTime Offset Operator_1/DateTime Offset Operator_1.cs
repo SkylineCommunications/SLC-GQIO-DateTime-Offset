@@ -1,11 +1,11 @@
-namespace MediaOps.GQI.DateTime_Offset_Operator_1
+namespace Skyline.DataMiner.GQI.DateTimeOffsetOperator
 {
 	using System;
 
 	using Skyline.DataMiner.Analytics.GenericInterface;
 
-	[GQIMetaData(Name = "MediaOps.GQI.DateTime Offset Operator")]
-	public class MediaOpsOperator : IGQIColumnOperator, IGQIRowOperator, IGQIInputArguments
+	[GQIMetaData(Name = "DateTime Offset Operator")]
+	public class DateTimeOffsetOperator : IGQIColumnOperator, IGQIRowOperator, IGQIInputArguments
 	{
 		private readonly GQIColumnDropdownArgument dateTimeValueColumnArg = new GQIColumnDropdownArgument("DateTime value") { IsRequired = true, Types = new[] { GQIColumnType.DateTime } };
 		private readonly GQIIntArgument dateTimeOffsetValueArg = new GQIIntArgument("DateTime Offset Value") { IsRequired = true };
