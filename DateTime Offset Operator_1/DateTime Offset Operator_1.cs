@@ -7,10 +7,10 @@ namespace Skyline.DataMiner.GQI.DateTimeOffsetOperator
 	[GQIMetaData(Name = "DateTime Offset Operator")]
 	public class DateTimeOffsetOperator : IGQIColumnOperator, IGQIRowOperator, IGQIInputArguments
 	{
-		private readonly GQIColumnDropdownArgument dateTimeValueColumnArg = new GQIColumnDropdownArgument("DateTime value") { IsRequired = true, Types = new[] { GQIColumnType.DateTime } };
+		private readonly GQIColumnDropdownArgument dateTimeValueColumnArg = new GQIColumnDropdownArgument("DateTime Value") { IsRequired = true, Types = new[] { GQIColumnType.DateTime } };
 		private readonly GQIIntArgument dateTimeOffsetValueArg = new GQIIntArgument("DateTime Offset Value") { IsRequired = true };
 		private readonly GQIStringDropdownArgument dateTimeOffsetUnitArg = new GQIStringDropdownArgument("DateTime Offset Unit", new[] { "Minute(s)", "Hour(s)", "Day(s)", "Second(s)" }) { IsRequired = true, DefaultValue = "Hour(s)" };
-		private readonly GQIStringArgument dateTimeOutputColumnNameArg = new GQIStringArgument("DateTime result column name") { IsRequired = true };
+		private readonly GQIStringArgument dateTimeOutputColumnNameArg = new GQIStringArgument("DateTime Result Column Name") { IsRequired = true };
 
 		private GQIColumn dateTimeValueColumn;
 		private GQIDateTimeColumn outputColumn;

@@ -1,16 +1,14 @@
-### DateTime Offset Operator
+# DateTime Offset Operator
 
-#### Overview
+## Overview
+The *DateTime Offset Operator* allows you to offset a date column by specifying the amount and units (days, hours, minutes, or seconds). The result is stored in a new column.
 
-DateTime Offset Operator allows you to offset date column by specifying the amount and units(days, hours, minutes or seconds), afterwards the new value is stored in new column.
-
-#### Using the Operator
-
-1. Click _Apply custom operator_ on your data source
-1. Select _DateTime Offset Operator_ for _Operator_
-1. Select column you want to offset for _DateTime Value_
-1. Enter offset amount for _DateTime Offset Value_
-1. Select offset unit for _DateTime Offset Unit_
-1. Provide name for the resulting column for _DateTime Result Column Name_
+## Using the Operator
+1. Select _Apply custom operator_ as your query data source.
+1. As the _Operator_, select _DateTime Offset Operator_.
+1. In the _DateTime Value_ box, select the column you want to offset.
+1. In the _DateTime Offset Value_ box, enter the offset amount.
+1. In the _DateTime Offset Unit_ box, select the offset unit.
+1. In the _DateTime Result Column Name_ box, specify the name for the resulting column.
 
 ![DateTime Offset Operator Flow](./Images/datetimeoffsetoperator.gif)
